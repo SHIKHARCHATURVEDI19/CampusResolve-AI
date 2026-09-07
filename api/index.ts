@@ -1,4 +1,4 @@
-﻿import express from 'express';
+import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import apiRoutes from '../server/routes/api.ts';
@@ -9,11 +9,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Mount the exact same API router under /api
+// Handle both /api and direct root if rewritten
 app.use('/api', apiRoutes);
-
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'healthy', timestamp: new Date().toISOString() });
-});
+app.use('/', apiRoutes);
 
 export default app;
