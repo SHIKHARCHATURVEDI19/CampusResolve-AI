@@ -1,4 +1,6 @@
-﻿# CampusResolve AI - Smart Multi-Campus Grievance & Dispatch System
+# CampusResolve AI - Smart Multi-Campus Grievance & Dispatch System
+
+> 🚀 **Live Production Demo**: [https://campusresolveaiv12.vercel.app/](https://campusresolveaiv12.vercel.app/)
 
 An AI-powered multi-tenant campus grievance management, deduplication, and automated worker load-balancing platform.
 

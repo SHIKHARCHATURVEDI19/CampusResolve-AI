@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { College, UserRole, User } from '../types/index.ts';
 import { 
   GraduationCap, 
@@ -474,8 +474,18 @@ export default function LandingPage({ colleges, onLogin, onVerifiedLogin }: Land
       </main>
 
       {/* Footer */}
-      <footer className="max-w-7xl mx-auto w-full px-6 py-4 text-center text-xs text-slate-500 border-t border-slate-800/80">
-        &copy; 2026 CampusResolve AI Multi-Campus Governance &bull; Verified via Personal Email OTP
+      <footer className="max-w-7xl mx-auto w-full px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500 border-t border-slate-800/80">
+        <div>&copy; 2026 CampusResolve AI Multi-Campus Governance &bull; Verified via Personal Email OTP</div>
+        <div>
+          <a
+            href="https://campusresolveaiv12.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-400 hover:text-indigo-300 font-bold transition hover:underline"
+          >
+            Live: campusresolveaiv12.vercel.app &rarr;
+          </a>
+        </div>
       </footer>
     </div>
   );
